@@ -54,8 +54,8 @@ ROOT_URLCONF = 'DocBlog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        # ajout de du lien absolue vers le template
+        'DIRS': ['C:/Users/Aubin/Code/Django/DocBlog/src/DocBlog/templates'],        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -116,6 +116,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+# APPEND_SLASH=True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
