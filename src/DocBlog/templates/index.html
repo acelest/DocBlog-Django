@@ -5,6 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Bienvenue sur mon template</h1>
+<!--    envoie du prenom et de la date a la vue -->
+<!--les filtres par exemple upper pour mettre le texte en majuscules voire docs django-->
+    <h1>Bienvenue sur mon template, cher {{ prenom|upper }}</h1>
+    <h2>et il est le  {{ date|date:'d F Y H:i:s' }}</h2>
 </body>
 </html>
