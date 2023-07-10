@@ -12,10 +12,10 @@ from datetime import datetime
 # def index(request):
 #     return render(request,"index.html")
 
-def index(request):
+# def index(request):
     # creation du dictionnaire context={}
-    date=datetime.today()
+    # date=datetime.today()
     # print(date)
     # print(type(date))
-    return render(request, "index.html", context={"prenom": "aubin","date":date})
+    # return render(request, "index.html", context={"prenom": "aubin","date":date})
 
