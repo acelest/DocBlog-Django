@@ -56,6 +56,7 @@ TEMPLATES = [
         # ajout de du lien absolue vers le template
         # 'DIRS': ['C:/Users/Aubin/Code/Django/DocBlog/src/DocBlog/templates'],        'APP_DIRS': True,
         'DIRS': [os.path.join(BASE_DIR, "DocBlog/templates")],
+        'APP_DIRS':True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
